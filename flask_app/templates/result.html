@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>User show</title>
+</head>
+
+<body>
+    <div class="card bg-dark text-light col-5 mx-auto my-5">
+        <div class="card-body">
+            <p class="card-text">First name: {{ loggedin_user.first_name }}</p>
+            <p class="card-text">Last name: {{ loggedin_user.last_name}}</p>
+            <p class="card-text">Email: {{ loggedin_user.email }}</p>
+            
+            
+        </div>
+        <div class="card-footer">
+            <a href="/logout" class="btn btn-outline-danger">Logout</a>
+        </div>
+    </div>
+      
+</body>
+
+</html>
